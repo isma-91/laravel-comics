@@ -2,7 +2,7 @@
 
 return [
     [
-        'route' => 'home',
+        'route' => 'comics',
         'label' => 'CHARACTERS',
     ],
     [

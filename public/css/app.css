@@ -1,9 +1,150 @@
+.container {
+  display: flex;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+header .top-header {
+  background-color: #0282F9;
+}
+header .top-header ul {
+  justify-content: flex-end;
+}
+header .top-header ul li {
+  margin: 0 1rem;
+  color: white;
+}
+header .bottom-header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+header header img {
+  height: 100%;
+}
+header header img:hover {
+  cursor: pointer;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  height: 100%;
+}
+header nav li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 100%;
+}
+header nav li:hover {
+  cursor: pointer;
+  color: #0282F9;
+}
+header nav li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #0282F9;
+  display: none;
+}
+header nav li:hover:after {
+  display: block;
+}
+
+main .main-top {
+  background-image: url("/img/jumbotron.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  padding: 3rem 0;
+}
+main .container {
+  flex-wrap: wrap;
+  position: relative;
+}
+main .main-middle {
+  background-color: #1C1C1C;
+}
+main .main-middle .container {
+  padding: 4rem 0;
+  gap: 2rem;
+}
+main .main-middle .news {
+  background-color: #0282F9;
+  color: white;
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  padding: 0.7rem;
+  bottom: 96%;
+  left: 0;
+}
+main .main-middle .comic-card {
+  flex: 0 1 auto;
+  width: calc((100% - 10rem) / 6);
+}
+main .main-middle .comic-card:hover {
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+  color: #0282F9;
+}
+main .main-middle .card {
+  color: whitesmoke;
+}
+main .main-middle .comic-img {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+main .main-middle .comic-img img {
+  width: 100%;
+  margin-bottom: -90px;
+}
+main .main-middle h3 {
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+main .main-middle .btn-load-more {
+  background-color: #0282F9;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin: auto;
+  padding: 0.7rem 3rem;
+  font-weight: bold;
+}
+main .main-middle .btn-load-more:hover {
+  filter: brightness(1.2);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: red;
+li {
+  list-style: none;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
 }
