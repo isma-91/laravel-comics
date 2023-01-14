@@ -15,6 +15,7 @@
             @foreach ($comics as $comic)
                 <li class="card comic-card">
                     <div class="comic-img">
+                        {{-- DA METTERE DINAMICA E NON /SHOP STATICO --}}
                         <a href="/shop">
                         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                         </a>
