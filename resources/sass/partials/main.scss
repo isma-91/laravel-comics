@@ -75,3 +75,30 @@ main {
         }
     }
 }
+
+.main-bot {
+    background-color: $dc-primary-color;
+    color: $primary-text-color;
+    text-transform: uppercase;
+    padding: 3rem;
+}
+
+.main-bot img {
+    height: 40px;
+    margin-right: .5rem;
+}
+
+.main-bot ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-bot li {
+    display: flex;
+    align-items: center;
+}
+
+.main-bot a:hover {
+    transition: all .5s linear;
+    transform: scale(1.2);
+}

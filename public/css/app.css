@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   width: 1200px;
@@ -132,19 +153,105 @@ main .main-middle .btn-load-more:hover {
   filter: brightness(1.2);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.main-bot {
+  background-color: #0282F9;
+  color: white;
+  text-transform: uppercase;
+  padding: 3rem;
 }
 
-li {
-  list-style: none;
+.main-bot img {
+  height: 40px;
+  margin-right: 0.5rem;
 }
 
-a {
+.main-bot ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-bot li {
   display: flex;
   align-items: center;
-  color: inherit;
-  text-decoration: none;
+}
+
+.main-bot a:hover {
+  transition: all 0.5s linear;
+  transform: scale(1.2);
+}
+
+footer .container {
+  justify-content: space-between;
+}
+footer .footer-top {
+  background-image: url("/img/footer-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+footer .left-side {
+  display: flex;
+  gap: 4rem;
+}
+footer .right-side {
+  display: block;
+  height: 100%;
+}
+footer .links {
+  padding: 2rem 0;
+}
+footer .footer-top h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+footer .footer-top ul {
+  margin-bottom: 2rem;
+}
+footer .footer-top ul li {
+  font-size: 0.8rem;
+  line-height: 1.7rem;
+  color: #959588;
+}
+footer .offset {
+  height: 100%;
+  margin-bottom: -70px;
+  margin-top: -50px;
+}
+footer .footer-bot {
+  background-color: #303030;
+  padding: 2rem;
+}
+footer .footer-bot .btn-cta {
+  background-color: #303030;
+  color: white;
+  padding: 0.8rem;
+  border: 2px solid #0282F9;
+  cursor: pointer;
+}
+footer .footer-bot .btn-cta:hover {
+  background-color: #0282F9;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+}
+footer .socials h2 {
+  color: #0282F9;
+}
+footer .socials ul {
+  display: flex;
+  align-items: center;
+}
+footer .socials li {
+  margin: 0 1rem;
+}
+footer .socials li:hover {
+  cursor: pointer;
+  filter: brightness(1.8);
+  transform: translateY(-10px);
+  transition: 0.4s ease-out;
+}
+footer .footer-top a:hover {
+  color: white;
+  text-decoration: underline;
 }

@@ -15,7 +15,7 @@
             @foreach ($comics as $comic)
                 <li class="card comic-card">
                     <div class="comic-img">
-                        <a href="#">
+                        <a href="/shop">
                         <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                         </a>
                     </div>
@@ -23,6 +23,8 @@
                 </li>
             @endforeach
             </ul>
+
+            <button class="btn-load-more">LOAD MORE</button>
         </div>
     </div>
 @endsection
@@ -30,12 +32,14 @@
 @section('content-bottom')
     <div class="main-bot">
         <ul class="container">
-            {{-- DA FARE PER BEN CON ARRAY ASSOPCIATIVO APPENA SI CAPISC EOCME FAR FUNZIONARE LE IMMAGINI ALTRIMENTI NON SO COSA SCRIVERE NELLA VOCE DELLE IMGS --}}
-            <li>DIGITAL COMICS</li>
-            <li>DC MERCHANDISE</li>
-            <li>SUBSCRIPTION</li>
-            <li>COMIC SHOP LOCATOR</li>
-            <li>DC POWER VISA</li>
+            @foreach ($shop_links as $link)
+                <li>
+                    <a href="#">
+                        <img src="{{ asset('img/' . $link['img']) }}" alt="{{ $link['txt'] }}">
+                        <p>{{ $link['txt'] }}</p>
+                    </a>
+                </li>
+            @endforeach
         </ul>
     </div>
 @endsection

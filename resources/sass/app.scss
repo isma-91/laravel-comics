@@ -1,11 +1,11 @@
-@import 'variables';
-@import 'partials/header';
-@import 'partials/main';
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 li {
@@ -18,6 +18,13 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+@import 'variables';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';
+
+
 
 
 

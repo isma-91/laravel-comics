@@ -1,0 +1,92 @@
+footer {
+    .container {
+    justify-content: space-between;
+    }
+    .footer-top {
+    background-image: url('/img/footer-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    }
+
+    .left-side {
+    display: flex;
+    gap: 4rem;
+    }
+
+    .right-side {
+    display: block;
+    height: 100%;
+    }
+
+    .links {
+    padding: 2rem 0;
+    }
+
+    .footer-top h2 {
+    color: $primary-text-color;
+    margin-bottom: 1rem;
+    }
+
+    .footer-top ul {
+    margin-bottom: 2rem;
+    }
+
+    .footer-top ul li {
+    font-size: .8rem;
+    line-height: 1.7rem;
+    color: $secondary-text-color;
+    }
+
+    .offset {
+    height: 100%;
+    margin-bottom: -70px;
+    margin-top: -50px;
+    }
+
+    .footer-bot {
+    background-color: $dc-primary-background-color;
+    padding: 2rem;
+    }
+
+    .footer-bot .btn-cta {
+    background-color: $dc-primary-background-color;
+    color: $primary-text-color;
+    padding: .8rem;
+    border: 2px solid $dc-primary-color;
+    cursor: pointer;
+    }
+
+    .footer-bot .btn-cta:hover {
+    background-color: $dc-primary-color;
+    }
+
+    .socials {
+    display: flex;
+    align-items: center;
+    }
+
+    .socials h2 {
+    color: $dc-primary-color;
+    }
+    .socials ul {
+    display: flex;
+    align-items: center;
+    }
+
+    .socials li {
+    margin: 0 1rem;
+    }
+
+    .socials li:hover {
+    cursor: pointer;
+    filter: brightness(1.8);
+    transform: translateY(-10px);
+    transition: 0.4s ease-out;
+    }
+
+    .footer-top a:hover {
+    color: $primary-text-color;
+    text-decoration: underline;
+    }
+}
